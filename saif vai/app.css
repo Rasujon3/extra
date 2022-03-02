@@ -1,0 +1,14 @@
+#error-message {
+  display: none;
+}
+#phone-details {
+  width: 50%;
+}
+
+/* mibile view */
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  #phone-details {
+    width: 100%;
+  }
+}
