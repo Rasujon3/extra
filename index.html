@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mobile Mart</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="container bg-gray">
+    <h2 class="text-center">Mobile Mart</h2>
+    <!-- search area -->
+    <div id="searchContainer" class="input-group mb-3 mx-auto">
+      <input
+        id="input-field"
+        type="text"
+        class="form-control"
+        placeholder="Search the food you want"
+        aria-label="Recipient's username"
+        aria-describedby="button-addon2"
+      />
+      <button
+        onclick="loadData()"
+        class="btn btn-outline-secondary"
+        type="button"
+        id="button-search"
+      >
+        Search
+      </button>
+    </div>
+    <!-- 404 error text -->
+    <div>
+      <p id="error" class="text-danger container text-center">
+        No result found
+      </p>
+    </div>
+    <!-- single phone details -->
+    <!-- <div class="mx-auto my-2" id="details"></div> -->
+    <section id="details" class="container"></section>
+
+    <!-- phone search result -->
+    <div id="results" class="row my-2"></div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

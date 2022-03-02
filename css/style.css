@@ -1,0 +1,9 @@
+#searchContainer {
+  width: 50%;
+}
+#details {
+  width: 50%;
+}
+#error {
+  display: none;
+}
